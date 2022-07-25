@@ -8,3 +8,8 @@ Resources:
     Type: AWS::CloudFormation::Stack
     Properties:
       TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate1.yaml
+
+  SESEmailTemplate3:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate3.yaml
