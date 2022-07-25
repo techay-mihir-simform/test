@@ -5,6 +5,7 @@ Resources:
       TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate.yaml
 
 
+
   SESEmailTemplate2:
     Type: AWS::CloudFormation::Stack
     Properties:
