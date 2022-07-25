@@ -1,0 +1,14 @@
+[
+    {
+        "ParameterKey":"TemplateName",
+        "ParameterValue":"mytemplate"
+    },
+    {
+       "ParameterKey":"SubjectPart",
+       "ParameterValue":"test"
+    },
+    {
+       "ParameterKey":"HtmlPart",
+       "ParameterValue":"<html>\r\n    <head>\r\n        Hello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>"
+    }
+   ]
