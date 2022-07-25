@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: AWS SES Template Sample Template
+Resources:
+  Template:
+    Type: "AWS::SES::Template"
+    Properties:
+      Template:
+        TemplateName: "test1"
+        SubjectPart: "Password Change"
+        HtmlPart: '<html>\r\n    <head>\r\n        Hello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'

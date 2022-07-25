@@ -1,0 +1,11 @@
+Resources:
+  SESEmailTemplate1:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: !Sub https://github.com/techay-mihir-simform/test/blob/f35aaf5f6098f0c3bf8817cd75e15ea2bdfd6180/sestemplate.yaml
+
+
+  SESEmailTemplate2:
+    Type: AWS::CloudFormation::Stack
+    Properties:
+      TemplateURL: !Sub https://github.com/techay-mihir-simform/test/blob/f35aaf5f6098f0c3bf8817cd75e15ea2bdfd6180/sestemplate1.yaml
