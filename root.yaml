@@ -2,7 +2,7 @@ Resources:
   SESEmailTemplate1:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: ./sestemplate.yaml
+      TemplateURL: sestemplate.yaml
 
   # SESEmailTemplate2:
   #   Type: AWS::CloudFormation::Stack
