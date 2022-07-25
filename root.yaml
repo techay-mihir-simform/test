@@ -13,9 +13,9 @@ Resources:
     Type: "AWS::SES::Template"
     Properties:
       Template:
-        TemplateName: Ref: TemplateName  
-        SubjectPart : Ref: SubjectPart
-        HtmlPart: Ref: HtmlPart
+        TemplateName: !Ref TemplateName  
+        SubjectPart : !Ref SubjectPart
+        HtmlPart: !Ref HtmlPart
   # Template1:
   #   Type: "AWS::SES::Template"
   #   Properties:
