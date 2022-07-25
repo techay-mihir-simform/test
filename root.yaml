@@ -1,36 +1,36 @@
 Parameters:
 
-  TemplateName:
-    Type: String
-  SubjectPart:
-    Type: String
-  HtmlPart:
-    Type: String
+  # TemplateName:
+  #   Type: String
+  # SubjectPart:
+  #   Type: String
+  # HtmlPart:
+  #   Type: String
 
 Resources:
-  Template:
-    # dynamic: [TEMPLATE]
+  # Template:
+  #   # dynamic: [TEMPLATE]
+  #   Type: "AWS::SES::Template"
+  #   Properties:
+  #     Template:
+  #       TemplateName: !Ref TemplateName  
+  #       SubjectPart : !Ref SubjectPart
+  #       HtmlPart: !Ref HtmlPart
+  Template2:
     Type: "AWS::SES::Template"
     Properties:
       Template:
-        TemplateName: !Ref TemplateName  
-        SubjectPart : !Ref SubjectPart
-        HtmlPart: !Ref HtmlPart
-  # Template1:
-  #   Type: "AWS::SES::Template"
-  #   Properties:
-  #     Template:
-  #       TemplateName: "mytemplate1"
-  #       SubjectPart: "Password Change"
-  #       HtmlPart: '<html>\r\n    <head>\r\n        Hello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
+        TemplateName: "mytemplate1"
+        SubjectPart: "Password Change"
+        HtmlPart: '<html>\r\n    <head>\r\n        Hello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
 
-  # Template2:
-  #   Type: "AWS::SES::Template"
-  #   Properties:
-  #     Template:
-  #       TemplateName: "mytemplate3"
-  #       SubjectPart: "Password Change"
-  #       HtmlPart: '<html>\r\n    <head>\r\n        Heeeeeello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
+  Template2:
+    Type: "AWS::SES::Template"
+    Properties:
+      Template:
+        TemplateName: "mytemplate3"
+        SubjectPart: "Password Change"
+        HtmlPart: '<html>\r\n    <head>\r\n        Heeeeeello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
 
   # Template3:
   #   Type: "AWS::SES::Template"
