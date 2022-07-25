@@ -15,18 +15,18 @@ Resources:
   #       SubjectPart: "Password Change"
   #       HtmlPart: '<html>\r\n    <head>\r\n        Hello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
 
-  Template2:
-    Type: "AWS::SES::Template"
-    Properties:
-      Template:
-        TemplateName: "mytemplate3"
-        SubjectPart: "Password Change"
-        HtmlPart: '<html>\r\n    <head>\r\n        Heeeeeello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
+  # Template2:
+  #   Type: "AWS::SES::Template"
+  #   Properties:
+  #     Template:
+  #       TemplateName: "mytemplate3"
+  #       SubjectPart: "Password Change"
+  #       HtmlPart: '<html>\r\n    <head>\r\n        Heeeeeello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
 
-  Template2:
+  Template3:
     Type: "AWS::SES::Template"
     Properties:
       Template:
-        TemplateName: "mytemplate3"
+        TemplateName: "mytemplate45"
         SubjectPart: "Password Change"
         HtmlPart: '<html>\r\n    <head>\r\n        Hello\r\n    <\/head>\r\n\r\n<body>\r\n    hey\r\n<\/body>\r\n<\/html>'
