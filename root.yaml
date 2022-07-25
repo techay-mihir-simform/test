@@ -2,14 +2,14 @@ Resources:
   SESEmailTemplate1:
     Type: AWS::CloudFormation::Stack
     Properties:
-      TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate.yaml
+      TemplateURL: ./sestemplate.yaml
 
-  SESEmailTemplate2:
-    Type: AWS::CloudFormation::Stack
-    Properties:
-      TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate1.yaml
+  # SESEmailTemplate2:
+  #   Type: AWS::CloudFormation::Stack
+  #   Properties:
+  #     TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate1.yaml
 
-  SESEmailTemplate3:
-    Type: AWS::CloudFormation::Stack
-    Properties:
-      TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate3.yaml
+  # SESEmailTemplate3:
+  #   Type: AWS::CloudFormation::Stack
+  #   Properties:
+  #     TemplateURL: https://asdfafasfasfa.s3.amazonaws.com/sestemplate3.yaml
