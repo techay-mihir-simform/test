@@ -1,0 +1,13 @@
+
+
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      
+  build:
+    commands:
+     
+      - sed -i  "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
+   
