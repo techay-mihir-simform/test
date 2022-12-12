@@ -8,7 +8,7 @@ phases:
       
   build:
     commands:
-      - sed -i -r "s#FROM .*/FROM $DOCKER_IMAGE#" ./Dockerfile
+      - sed -i -r "s#^(FROM ).*#\1 $DOCKER_IMAGE#" ./Dockerfile
       #- find . -type f -name Dockerfile -print -exec sed -i 's/FROM .*/FROM '$DOCKER_IMAGE'/' {} \; 
       #- sed -i '' -e 's/FROM .*/FROM $DOCKER_IMAGE/' ./Dockerfile
       #- sed -i Dockerfile -e "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
