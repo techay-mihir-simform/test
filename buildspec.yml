@@ -10,4 +10,5 @@ phases:
     commands:
      
       - sed -i  "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
+      - cat Dockerfile
    
