@@ -9,6 +9,7 @@ phases:
   build:
     commands:
      
-      - sed -in "" "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
+      #- sed -i "" "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
+      - sed -i Dockerfile -e "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
       - cat Dockerfile
    
