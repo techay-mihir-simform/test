@@ -9,6 +9,6 @@ phases:
   build:
     commands:
      
-      - sed -i  "/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
+      - sed -i "" "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
       - cat Dockerfile
    
