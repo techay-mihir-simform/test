@@ -9,7 +9,7 @@ phases:
   build:
     commands:
      
-      - find . -type f -name Dockerfile -print -exec sed -i '' 's/FROM .*/FROM $DOCKER_IMAGE/' {} \; 
+      - find . -type f -name Dockerfile -print -exec sed -i 's/FROM .*/FROM $DOCKER_IMAGE/' {} \; 
       #- sed -i '' -e 's/FROM .*/FROM $DOCKER_IMAGE/' ./Dockerfile
       #- sed -i Dockerfile -e "s/FROM .*/FROM $DOCKER_IMAGE/" Dockerfile
       - cat Dockerfile
